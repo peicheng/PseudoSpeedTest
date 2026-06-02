@@ -25,7 +25,8 @@ jobs:
     - name: Build with Gradle
       # run: ./gradlew build -x lint 
       run: |
-       ./gradlew assembleDebug -x lintVitalAnalyzeRelease -x validateSigningDebug;
+       ./gradlew assembleRelease -x lint ;
+       # ./gradlew assembleDebug -x lintVitalAnalyzeRelease -x validateSigningDebug;
        #./gradlew build --debug
       
     - uses: actions/upload-artifact@v4
